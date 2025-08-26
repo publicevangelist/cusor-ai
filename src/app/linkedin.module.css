@@ -1,0 +1,118 @@
+ .banner {
+   height: 120px;
+   background: var(--background-soft);
+ }
+
+ .profileWrap {
+   max-width: 960px;
+   margin: -40px auto 0;
+   padding: 0 24px 24px;
+ }
+
+ .profileCard {
+   background: var(--background);
+   border: 1px solid var(--border);
+   border-radius: 12px;
+   padding: 20px;
+   position: relative;
+   box-shadow: var(--shadow);
+ }
+
+ .avatar {
+   width: 96px;
+   height: 96px;
+   border-radius: 50%;
+   background: var(--background-soft);
+   border: 3px solid var(--background);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 400;
+   font-size: 24px;
+   color: var(--muted);
+   position: absolute;
+   top: -48px;
+   object-fit: cover;
+   object-position: center;
+ }
+
+ .info {
+   padding-left: 112px;
+ }
+
+ .name {
+   font-size: 24px;
+   font-weight: 400;
+   color: #111827;
+ }
+
+ .headline {
+   margin-top: 6px;
+   color: var(--muted);
+   font-weight: 300;
+ }
+
+ .meta {
+   margin-top: 8px;
+   font-size: 14px;
+ }
+
+ .meta a { color: #60a5fa; }
+
+ .grid {
+   max-width: 960px;
+   margin: 16px auto 80px;
+   padding: 0 24px;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 20px;
+ }
+
+ .full { grid-column: 1 / -1; }
+
+ .card {
+   background: var(--background);
+   border: 1px solid var(--border);
+   border-radius: 12px;
+   padding: 16px 18px;
+   box-shadow: var(--shadow);
+ }
+
+ .cardTitle {
+   font-size: 18px;
+   font-weight: 400;
+   margin-bottom: 10px;
+   color: #111827;
+ }
+
+ .list { padding-left: 18px; }
+
+ .expItem { margin-bottom: 12px; }
+ .expRole { font-weight: 400; color: #111827; }
+ .expWhen { color: var(--muted); font-size: 13px; font-weight: 300; }
+
+ .btnOutline {
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+   padding: 8px 12px;
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   color: #111827;
+   background: transparent;
+   transition: opacity .15s ease;
+ }
+ .btnOutline:hover { opacity: .75; }
+
+ /* subtle status colors */
+ .statusTodo { color: #6B7280; }
+ .statusInProgress { color: #6B7280; opacity: .9; }
+ .statusDone { color: #6B7280; opacity: .8; }
+
+ @media (max-width: 860px) {
+   .grid { grid-template-columns: 1fr; }
+   .info { padding-left: 0; margin-top: 64px; }
+   .avatar { position: static; margin-top: -48px; }
+ }
+
+

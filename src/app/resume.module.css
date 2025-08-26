@@ -1,0 +1,76 @@
+ .container {
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 32px 20px 80px;
+   line-height: 1.7;
+ }
+
+ .header {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   gap: 24px;
+   margin-bottom: 24px;
+   border-bottom: 1px solid rgba(127, 127, 127, 0.25);
+   padding-bottom: 16px;
+ }
+
+ .name {
+   font-size: 32px;
+   font-weight: 800;
+ }
+
+ .contacts {
+   margin-top: 8px;
+   font-size: 14px;
+ }
+
+ .contacts a {
+   color: #3b82f6;
+ }
+
+ .section {
+   margin-top: 28px;
+ }
+
+ .sectionTitle {
+   font-size: 18px;
+   font-weight: 700;
+   margin-bottom: 10px;
+ }
+
+ .metaList {
+   display: grid;
+   grid-template-columns: 120px 1fr;
+   gap: 6px 16px;
+   font-size: 14px;
+ }
+
+ .list {
+   padding-left: 20px;
+ }
+
+ .role {
+   font-weight: 700;
+ }
+
+ .company {
+   font-weight: 600;
+ }
+
+ .when {
+   color: #808080;
+   font-size: 13px;
+ }
+
+ .block {
+   margin-top: 8px;
+ }
+
+ @media (max-width: 720px) {
+   .metaList {
+     grid-template-columns: 1fr;
+   }
+ }
+
+
